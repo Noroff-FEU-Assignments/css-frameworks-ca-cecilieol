@@ -1,0 +1,48 @@
+.pagination {
+  margin: 25px 0 35px 0;
+}
+
+#bottom-pagination {
+  margin-bottom: 100px;
+}
+
+.page-link {
+  border-color: map-get($colors, pink-color) !important;
+  color: map-get($colors, pink-color) !important;
+}
+
+.page-item.active > .page-link {
+  background-color: map-get($colors, pink-color) !important;
+  color: white !important;
+}
+
+.row-cols-4 {
+  justify-content: space-around;
+}
+
+.row-cols-4 > .col {
+  width: 17rem;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card-body > .btn-primary,
+.card-body > .btn-primary:hover,
+.card-body > .btn-primary:active,
+.card-body > .btn-primary:focus {
+  background: linear-gradient(
+    to right,
+    map-get($colors, pink-color) 0%,
+    map-get($colors, pink-color) 90%,
+    map-get($colors, grey-color) 90%,
+    map-get($colors, grey-color) 100%
+  );
+  border-color: white;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .row-cols-4 {
+    justify-content: space-between;
+  }
+}

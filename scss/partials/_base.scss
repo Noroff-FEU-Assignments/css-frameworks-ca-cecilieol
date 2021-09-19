@@ -1,0 +1,9 @@
+main {
+  background: map-get($colors, background-primary);
+}
+
+#main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}

@@ -1,0 +1,38 @@
+h1,
+.navbar-light > .container-fluid > .navbar-brand,
+.navbar-light > .container-fluid > .navbar-brand:hover,
+.navbar-light > .container-fluid > .navbar-brand:active,
+.navbar-light > .container-fluid > .navbar-brand:focus {
+  font-family: "Playfair Display", serif;
+  color: map-get($colors, pink-color);
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#main-content > h1,
+#main-content > #home-intro > h1 {
+  font-size: 34px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Lato", sans-serif;
+  color: map-get($colors, grey-color);
+}
+
+h5 {
+  color: map-get($colors, dark-text);
+  font-size: 20px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Yay Company</title>
+    <meta name="description" content="A website for the Yay Company" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">The Yay Company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            <form class="d-flex search-mobile">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn-searchbar" type="submit">Go</button>
+            </form>
+          </ul>
+          <form class="d-flex search-desktop">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn-searchbar" type="submit">Go</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="main-content">
+        
+        <section class="contact-page-right">
+          <div class="icon-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 31.987 24.736">
+              <path id="envelope" d="M31.381,72.168a.375.375,0,0,1,.606.3V85.644a3.047,3.047,0,0,1-3,3.092H3a3.047,3.047,0,0,1-3-3.092V72.477a.373.373,0,0,1,.606-.3c1.4,1.121,3.255,2.544,9.627,7.318,1.318.992,3.542,3.079,5.76,3.066,2.23.019,4.5-2.113,5.766-3.066C28.132,74.719,29.981,73.289,31.381,72.168ZM15.993,80.491c1.449.026,3.536-1.881,4.586-2.667,8.29-6.2,8.921-6.744,10.833-8.29a1.559,1.559,0,0,0,.575-1.217V67.092a3.047,3.047,0,0,0-3-3.092H3a3.047,3.047,0,0,0-3,3.092v1.224a1.569,1.569,0,0,0,.575,1.217c1.912,1.54,2.543,2.087,10.833,8.29C12.457,78.61,14.544,80.516,15.993,80.491Z" transform="translate(0 -64)" fill="#767676"/>
+            </svg>
+            <p>hello@yay.com</p>
+          </div>
+
+          <div class="icon-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 34 34">
+              <path id="phone" d="M32.754,1.623,25.848.03a1.6,1.6,0,0,0-1.826.923L20.835,8.39a1.59,1.59,0,0,0,.458,1.859l4.024,3.294A24.61,24.61,0,0,1,13.55,25.31l-3.294-4.024A1.592,1.592,0,0,0,8.4,20.828L.96,24.015a1.613,1.613,0,0,0-.93,1.833l1.594,6.906a1.593,1.593,0,0,0,1.554,1.235A30.808,30.808,0,0,0,33.99,3.177,1.592,1.592,0,0,0,32.754,1.623Z" transform="translate(0.01 0.011)" fill="#767676"/>
+            </svg>
+            <p>123 456 7890</p>
+          </div>
+
+          <div class="icon-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 25.5 34">
+              <path id="map-marker-alt" d="M11.44,33.314C1.791,19.326,0,17.891,0,12.75a12.75,12.75,0,0,1,25.5,0c0,5.141-1.791,6.576-11.44,20.564a1.594,1.594,0,0,1-2.621,0Zm1.31-15.252A5.312,5.312,0,1,0,7.437,12.75,5.312,5.312,0,0,0,12.75,18.062Z" fill="#767676"/>
+            </svg>          
+            <div class="address-block">
+                <p>123 Some Street</p>
+                <p>Somewhere</p>
+                <p>Some City</p>
+                <p>10000</p>
+            </div>
+          </div>
+        </section>
+
+        <h1>Submit your details</h1>
+          
+        <section class="contact-page-left">
+          <form>
+            <div class="mb-3">
+                <label for="InputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="InputName">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail">
+            </div>
+            <div class="mb-3">
+                <label for="InputWebsite" class="form-label">Website</label>
+                <div class="d-flex">
+                  <button class="btn-website" disabled>https://</button>
+                  <input type="url" class="form-control" id="InputWebsite">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="InputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="InputMessage"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Allow us to sell your personal details to whomever we want</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+      </div>
+      
+    </main>
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" width="99.854" height="30.003" viewBox="0 0 99.854 30.003">
+        <g id="Icons" transform="translate(-75 -1358.953)">
+          <path id="vimeo-v" d="M34.679,71.049q-.232,5.065-7.078,13.87-7.074,9.2-11.973,9.2-3.032,0-5.134-5.6C7.768,78.514,6.606,72.652,4.352,72.652a10.808,10.808,0,0,0-2.726,1.634L0,72.179c4-3.508,7.814-7.411,10.207-7.628q4.054-.395,4.987,5.537C17.417,84.144,18.4,86.266,22.443,79.9q2.172-3.438,2.339-5.235c.372-3.555-2.772-3.315-4.9-2.4q2.556-8.375,9.773-8.139c3.547.093,5.227,2.408,5.026,6.923Z" transform="translate(75 1294.837)" fill="#767676"/>
+          <path id="youtube" d="M56.708,68.694a5.361,5.361,0,0,0-3.772-3.8c-3.327-.9-16.67-.9-16.67-.9s-13.342,0-16.67.9a5.361,5.361,0,0,0-3.772,3.8c-.892,3.349-.892,10.336-.892,10.336s0,6.987.892,10.336A5.281,5.281,0,0,0,19.6,93.1c3.327.9,16.67.9,16.67.9s13.342,0,16.67-.9a5.281,5.281,0,0,0,3.772-3.736c.892-3.349.892-10.336.892-10.336S57.6,72.043,56.708,68.694ZM31.9,85.374V72.686L43.054,79.03Z" transform="translate(117.254 1294.953)" fill="#767676"/>
+        </g>
+      </svg>
+      <div class="footer-text">
+        <p>hello@yay.com</p>
+        <p>Copyright 2020</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+      crossorigin="anonymous"></script>
+</body>
+</html>

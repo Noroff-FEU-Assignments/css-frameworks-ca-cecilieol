@@ -1,0 +1,58 @@
+#nav-tab,
+.tab-content {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #nav-tab {
+    display: flex;
+    border-bottom: none;
+    margin-top: 50px;
+
+    .nav-link.active {
+      border: none;
+    }
+  }
+
+  .tab-pane > .share-socials {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .nav-tabs {
+    .nav-link,
+    .nav-link:hover {
+      color: map-get($colors, pink-color);
+      padding-left: 40px;
+      padding-right: 40px;
+
+      &.active {
+        color: map-get($colors, grey-color);
+      }
+    }
+  }
+
+  .tab-content {
+    display: block;
+    background-color: white;
+    overflow: hidden;
+    padding: 35px 70px 50px 25px;
+    margin-bottom: 150px;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 0 16px 22px rgba(0, 0, 0, 0.1);
+
+    img {
+      margin-right: 25px;
+      width: 250px;
+    }
+
+    .share-socials p {
+      margin-right: 20px;
+      color: map-get($colors, dark-text);
+    }
+  }
+
+  .accordion {
+    display: none;
+  }
+}

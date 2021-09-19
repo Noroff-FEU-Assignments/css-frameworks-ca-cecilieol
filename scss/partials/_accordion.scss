@@ -1,0 +1,41 @@
+.accordion {
+  box-shadow: 0 16px 22px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.accordion > .accordion-item > .accordion-header > .accordion-button {
+  &::after {
+    background-image: none;
+  }
+
+  &:not(.collapsed) {
+    color: map-get($colors, pink-color);
+    background-color: white;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+.accordion-body {
+  border-top: 1px solid map-get($colors, pink-color);
+  background-color: map-get($colors, background-secondary);
+}
+
+.accordion-body > .share-socials {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  p {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .accordion {
+    display: none;
+  }
+}

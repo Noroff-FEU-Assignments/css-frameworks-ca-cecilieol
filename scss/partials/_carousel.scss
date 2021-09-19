@@ -1,0 +1,7 @@
+.carousel-indicators [data-bs-target] {
+  height: 30px !important;
+}
+
+.carousel-indicators .active {
+  background-color: map-get($colors, pink-color) !important;
+}

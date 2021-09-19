@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Yay Company</title>
+    <meta name="description" content="A website for the Yay Company" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The Yay Company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <form class="d-flex search-mobile">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn-searchbar" type="submit">Go</button>
+              </form>
+            </ul>
+            <form class="d-flex search-desktop">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn-searchbar" type="submit">Go</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Carousel images/carousel-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Carousel images/carousel-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Carousel images/carousel-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="home-intro">
+          <h1>We do YAY things</h1>
+          <p>Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, 
+          a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend 
+          finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet, 
+          consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, 
+          pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.</p>
+        </div>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first" type="button" role="tab" aria-controls="nav-first" aria-selected="true">First</button>
+            <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second" type="button" role="tab" aria-controls="nav-second" aria-selected="false">Second</button>
+            <button class="nav-link" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third" type="button" role="tab" aria-controls="nav-third" aria-selected="false">Third</button>
+        </div>
+        <div class="clearfix">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
+              <img src="images/Tab images/tab-1.jpg" class="col-md-3 float-md-start mb-3 ms-md-3" alt="...">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam 
+              non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus. </p>
+              <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg> 
+              </div>
+            </div>
+            <div class="tab-pane" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+              <img src="images/Tab images/tab-2.jpg" class="col-md-3 float-md-start mb-3 ms-md-3" alt="...">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam 
+              non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus. </p>
+                <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg> 
+              </div>
+            </div>
+            <div class="tab-pane" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
+              <img src="images/Tab images/tab-3.jpg" class="col-md-3 float-md-start mb-3 ms-md-3" alt="...">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam 
+              non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus. </p>
+                <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              First
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. 
+                Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed 
+                condimentum mattis rhoncus. </p>
+                <img src="images/Tab images/tab-1.jpg" class="w-100" alt="...">
+                <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Second
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. 
+                Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed 
+                condimentum mattis rhoncus. </p>  
+                <img src="images/Tab images/tab-2.jpg" class="w-100" alt="...">
+                <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg>        
+              </div>        
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Third
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. 
+                Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed 
+                condimentum mattis rhoncus. </p>
+                <img src="images/Tab images/tab-3.jpg" class="w-100" alt="...">
+                <div class="share-socials">
+                <p><strong>SHARE</strong></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65.052" height="25.452" viewBox="0 0 65.052 25.452">
+                  <path id="facebook-f" d="M3.745,25V13.818H0V9.375H3.745v-3.5C3.745,2.07,6.069,0,9.463,0a31.442,31.442,0,0,1,3.428.176V4.15H10.537c-1.846,0-2.2.879-2.2,2.163V9.375H12.5l-.571,4.443H8.335V25" fill="#0a0a0a"/>
+                  <path id="twitter" d="M27.617,54.312c.02.273.02.547.02.82,0,8.34-6.348,17.949-17.949,17.949A17.827,17.827,0,0,1,0,70.25a13.051,13.051,0,0,0,1.523.078,12.634,12.634,0,0,0,7.832-2.7,6.32,6.32,0,0,1-5.9-4.375,7.956,7.956,0,0,0,1.191.1,6.672,6.672,0,0,0,1.66-.215A6.309,6.309,0,0,1,1.25,56.949v-.078a6.353,6.353,0,0,0,2.852.8,6.318,6.318,0,0,1-1.953-8.437,17.932,17.932,0,0,0,13.008,6.6A7.122,7.122,0,0,1,15,54.391a6.315,6.315,0,0,1,10.918-4.316,12.42,12.42,0,0,0,4-1.523,6.292,6.292,0,0,1-2.773,3.477,12.647,12.647,0,0,0,3.633-.977A13.561,13.561,0,0,1,27.617,54.312Z" transform="translate(34.271 -47.63)" fill="#0a0a0a"/>
+                </svg> 
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </main>
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" width="99.854" height="30.003" viewBox="0 0 99.854 30.003">
+        <g id="Icons" transform="translate(-75 -1358.953)">
+          <path id="vimeo-v" d="M34.679,71.049q-.232,5.065-7.078,13.87-7.074,9.2-11.973,9.2-3.032,0-5.134-5.6C7.768,78.514,6.606,72.652,4.352,72.652a10.808,10.808,0,0,0-2.726,1.634L0,72.179c4-3.508,7.814-7.411,10.207-7.628q4.054-.395,4.987,5.537C17.417,84.144,18.4,86.266,22.443,79.9q2.172-3.438,2.339-5.235c.372-3.555-2.772-3.315-4.9-2.4q2.556-8.375,9.773-8.139c3.547.093,5.227,2.408,5.026,6.923Z" transform="translate(75 1294.837)" fill="#767676"/>
+          <path id="youtube" d="M56.708,68.694a5.361,5.361,0,0,0-3.772-3.8c-3.327-.9-16.67-.9-16.67-.9s-13.342,0-16.67.9a5.361,5.361,0,0,0-3.772,3.8c-.892,3.349-.892,10.336-.892,10.336s0,6.987.892,10.336A5.281,5.281,0,0,0,19.6,93.1c3.327.9,16.67.9,16.67.9s13.342,0,16.67-.9a5.281,5.281,0,0,0,3.772-3.736c.892-3.349.892-10.336.892-10.336S57.6,72.043,56.708,68.694ZM31.9,85.374V72.686L43.054,79.03Z" transform="translate(117.254 1294.953)" fill="#767676"/>
+        </g>
+      </svg>
+      <p>hello@yay.com</p>
+      <p>Copyright 2020</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+      crossorigin="anonymous"></script>
+</body>
+</html>
